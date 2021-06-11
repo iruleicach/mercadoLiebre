@@ -1,0 +1,620 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+/*---- Header ----*/
+header{
+    background-color: #EAC926;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    width: 100%;
+}
+
+header div.logo, header div.header-form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+
+header div.top-header p{
+    width: 90%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header div.header-form{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 11px;
+}
+
+header div.header-form input{
+    background-color: #fff;
+    color: #666;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 90%;
+}
+
+header div.header-form button{
+    background-color: #FFF;
+    color: #666;
+    border: 1px solid #fff;
+    margin-left: -10px;
+    border-radius: 5px;
+    width: 10%;
+}
+
+header div.header-form button:hover{
+    cursor: pointer;
+}
+
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+    display: none;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header nav ul li:hover{
+    color: #0044AA;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+/*---- Main ----*/
+div.last-visit, div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount, .description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3, .description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i, .discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+/*---- Footer ----*/
+footer{
+    background-color: #fff;
+    color:#666;
+}
+
+.footer-top{
+    padding: 15px;
+    margin: auto;
+}
+
+.footer-box{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-box i{
+    font-size: 2em; 
+    color: #1259c3;
+    padding-top: 10px;
+}
+
+.footer-box i:hover{
+    font-size: 2em; 
+    color: #666;
+    padding-top: 10px;
+}
+
+.copyright{
+    padding: 15px;
+    font-size: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+/* --- Register --- */
+.register-form{
+    background-color:#fff;
+    margin: auto;
+    padding: 20px;
+    font-size: 15px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 1px -1px 4px 2px #D6D6D6;
+}
+
+.form-title{
+    padding: 10px;
+    color: #666;
+    text-align: center;
+}
+
+.register-form-field{
+    padding: 10px;
+    display: block;
+}
+
+.register-form-field-op{
+    padding: 10px;
+}
+
+.register-form-field:hover::after{
+    content: "Por favor completá este campo";
+    color: red;
+    font-size: 11px;
+    
+}
+
+.profile:hover:after{
+    content: "Por favor seleccioná la opción que corresponda";
+    color: red;
+    font-size: 11px;
+}
+
+.categories:hover::after{
+    content: "Por favor seleccioná la/s opcion/es que correspondan";
+    color: red;
+    font-size: 11px;
+}
+
+.photo:hover::after{
+    display: block;
+    content: "Por favor elegí una imagen .jpg o .png";
+    color: red;
+    font-size: 11px;
+}
+
+
+.register-form.form{
+    padding: 10%;
+}
+
+.register-form-field label, .register-form-field input{
+    width: 80%;
+    display: block;
+    color: black;     
+}
+
+.register-form-field label{
+    border: none;
+    background: transparent;
+    color: black;
+}
+
+.register-form-field input{
+    border: none;
+    border-bottom: solid 0.2px rgba(163, 163, 163, 0.767);
+    color: #666;    
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+label.user, label.interest{
+    width: 100%;
+    display: block;
+    color: black;
+    margin-bottom: 3px;
+}
+
+label.checkbox{
+    display: block;
+    color: black;
+    font-size: 12px;
+}
+
+label.checkbox-grey{
+    display: block;
+    color: black;
+    position: relative;
+    background-color: #f9f9f9;  
+    font-size: 12px;
+}
+
+label.radio{
+    width: 100%;
+    display: block;    
+    font-size: 12px;
+}
+
+.register-form p{
+    text-align: center;
+    font-size: 0.5em;
+}
+
+input#user-image{
+    width: 90%;
+    margin-top: 3px;
+}
+
+div.register-buttons{
+    display: flex;
+    justify-content: space-around;   
+}
+
+.register-buttons button{
+    background-color: #1259c3;
+    border: solid 1px #1259c3;
+    text-align: center;
+    font-size: 11px;
+    margin-top: 15px;
+    color: white;
+    border-radius: 6px;
+    padding: 2px;
+    box-shadow: 1px 1px 7px -4px #03264C;
+}
+
+.register-buttons button:hover{
+    background-color: #03264C;
+    border: solid 1px #03264C;
+}
+
+.register-buttons button.send{
+    width: 80px;
+}
+
+.register-buttons button.reset{
+    width: 80px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+/* --- Formulario de Login --- */
+div.login-form{
+    width: 100%;
+    background-color: white;
+    font-size: 15px;
+    padding: 30px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px -1px 4px 2px #D6D6D6;
+}
+
+div.login-form div.h2{
+    padding-bottom: 15%;
+    font-size: 13px;
+}
+
+div.login-form div.h2:hover:after{
+    content: "Completá todos los campos";
+    color: red;
+    font-size: 11px;
+}
+
+div.login-form form{
+    width: 95%;
+    display: block;
+    font-size: 13px;
+}
+
+div.login-field-user, div.login-field-password{
+    margin-bottom: 10%;
+    width: 90%;
+}
+
+div.login-field-user:hover::after{
+    display: block;
+    content: "Por favor completá tu nombre";
+    color: red;
+    font-size: 10px;
+}
+
+div.login-field-password:hover::after{
+    content: "Por favor completá correctamente tu constraseña";
+    display: block;
+    color: red;
+    font-size: 10px;
+}
+
+div.login-form form label{
+    white-space: nowrap;
+    margin: 15px 0 10005px 0;    
+}
+
+div.login-form form input{
+   background: #ebebeb;
+   border: 1px solid #666;
+   border-radius: 5px 5px 5px 5px;
+   color: #393939;
+   font-size: 12px;
+   padding: 5px;
+   width: 95%;
+}
+
+div.login-form form input:focus{
+   font-weight: bold;
+   background-color: #EAC926;
+}
+
+div.login-form label :hover::after{
+   content: "Debes completar este campo";
+   color: red;
+}
+
+div.login-form form button{
+    padding: 1%;
+    width: 40%;
+    color: white;
+    background-color: #1259c3;
+    border:1px solid #1259c3;
+    margin-top: 3px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px -4px #03264C;
+}
+
+div.login-form form button:hover{
+    background-color: #0022AA;
+    border:1px solid #0022AA;
+    cursor: pointer;
+}
+
+
+
+/*  --- Media Queries ---*/
+@media (min-width: 361px){
+    div.top-header{
+        padding: 2%;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    header div.logo{
+        padding: 1px;
+        width: 20%;
+    }
+    
+    header div.header-form{
+        width: 50%;
+        display: block;
+    }
+
+    .header-form input{
+        padding: 2px;
+        border: red
+    }           
+
+    .header-form button{
+        padding: 2px;
+    }
+
+    header div.top-header p{
+        text-align: inherit;
+        width: 30%;
+        font-size: 11px;
+        text-align: right;
+        flex-grow: 2;
+    }
+
+    div.burger-menu{
+        display: none;
+    }
+    
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        width: 95%;
+        margin-left: 0px;
+    }
+    
+    header nav ul{
+        display: flex;
+    }
+
+    ul.navbar{
+        width: 60%;
+    }
+
+    header nav ul li{
+        margin: 0.5px;
+        display: flex;
+        padding: 10px;
+    }
+
+    header nav ul li a:hover{
+        cursor: pointer;
+        color: #03264C;
+    }
+    
+    main article div.main-article .description{
+        display: none;
+    }
+
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    main section article:hover .description{
+        display: block;
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price, .discount{
+        width: 50%;
+    }
+
+    /* Register */
+    .register-form{
+      width: 70%;
+    }
+        
+    div.register-buttons{
+        justify-content: space-evenly;   
+    }
+
+    .register-buttons button{
+        font-size: 12px;
+        width: 50%;
+    }
+
+    .register-buttons button.reset{
+        width: 80px;
+    }
+
+    /* Login */
+    div.login-form{
+        width: 70%;
+        font-size: 20px;
+    }
+
+    div.login-form div.h2{
+        padding-bottom: 5%;
+    }
+
+    div.login-field-user, div.login-field-password {
+        margin-bottom: 3%;
+    }
+
+@media (min-width: 769px){  
+    header div.header-form input{
+        padding: 5px;
+    }
+
+    header div.header-form button{
+        padding: 5px;
+    }
+
+    header div.top-header p{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    header nav{
+        font-size: 12px;
+    }
+    
+    main section div.products article{
+        width: 22%;
+    }
+    
+    .register-buttons button.reset{
+        width: 100px;
+    }
+
+    .footer-top{
+    display: flex;
+    }
+
+    div.login-form{
+        width: 60%;
+    }
+}
